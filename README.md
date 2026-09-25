@@ -10,6 +10,17 @@ The **Internal Request API** simulates an internal request management system whe
 
 The current version focuses on establishing the API structure and implementing the initial endpoints. Future iterations will introduce persistence, validation, testing, authentication, and additional backend features.
 
+# Internal Request Management API
+
+## Overview
+## Architecture
+## Tech Stack
+## Current Features
+## Planned Features
+## Project Structure
+## Running Locally
+## API Endpoints
+
 ## 🛠️ Technologies
 
 * **Python**
