@@ -6,12 +6,10 @@ tickets_bp = Blueprint("tickets", __name__)
 # cada ticket terá: 
                 # id "ticket/<int:ticket_id>"
                 # title e description "ticket/<ticket_title>?description=<ticket_description>"
-                # requester - quem solicitou a ação "ticket/<ticket_title>?requester=<requester_name&requester_contato>"
-                # assignee - quem cumprirá a solicitação
+                # requester - quem solicitou a ação 
                 # priority - open, in_progress, resolved, cancelled
                 # status - Low, medium, High, critical
-                # created_at - solicitado em (email, whatasapp)
-                # updated_at - atualizado em (email, whatasapp) na data tal.
+
 
 tickets = [
 
@@ -22,15 +20,13 @@ tickets = [
             "requester": {
                 "name": "Nome do Solicitante",
                 "contact": "Contato do Solicitante"
-            },
-        "assignee": {
-            "name": "Nome do Responsável",
-            "contact": "Contato do Responsável"
         },
+
         "priority": "Alta",
         "status": "Aberto",
         "created_at": "2024-06-01T10:00:00Z",
-        "updated_at": "Ainda não foi atualizado"
+        "due_date": "Vencido",
+        "SLA": "Atrasado"
         },
         
         {
@@ -41,14 +37,11 @@ tickets = [
             "nome": "Nome do Solicitante 2",
             "contato": "Contato do Solicitante 2"
         },
-        "assignee": {
-            "nome": "Nome do Responsável 2",
-            "contato": "Contato do Responsável 2"
-        },
         "priority": "Média",
         "status": "Em andamento",
         "created_at": "2024-06-02T14:30:00Z",
-        "updated_at": "2024-06-03T09:15:00Z"
+        "due_date": "2024-07-03T09:15:00Z",
+        "SLA": "Dentro  do Prazo"
         }
 
 ]
